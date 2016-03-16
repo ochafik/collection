@@ -1,0 +1,6 @@
+language: dart
+dart:
+  - dev
+script:
+  - dartanalyzer --strong `find lib -name '*.dart'`
+  - pub run test
